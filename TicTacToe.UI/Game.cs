@@ -43,7 +43,7 @@ namespace TicTacToe.UI
         {
 
               #region Horzontal Winning Condtion
-            int row = 0;
+            var row = 0;
             if (RowMarkersArethesame(row) && IsPlayer(0, row))
             {
                 return this.board[0, row];
@@ -62,7 +62,7 @@ namespace TicTacToe.UI
 
 
               #region Vertical Winning Condtion
-            int column = 0;
+            var column = 0;
 
             if (ColumnMarersAreSame(column) && IsPlayer(column, 0))
             {
@@ -86,11 +86,10 @@ namespace TicTacToe.UI
                   return this.board[1, 1];
             }
 
-            HashSet<int> unique = new HashSet<int>();
-
+ 
              #region Draw Winning Condtion
 
-            int noofFilledCells = 0;
+           var noofFilledCells = 0;
             foreach (var item in this.board)
             {
                 if (item.Equals(GameStatus.X.ToString()) || item.Equals(GameStatus.O.ToString() ))
@@ -115,11 +114,7 @@ namespace TicTacToe.UI
 
 
              #endregion
-
            
-
-
-
             //return this.board[0, 0];
             
             #endregion

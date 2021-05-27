@@ -5,9 +5,6 @@ using Xunit;
 
 namespace TicTacToe
 {
-
-  
-
     public class GameBoardSpecification
     {
 

@@ -7,17 +7,11 @@ namespace TicTacToe.UI
     {
 
 
-
-
-        static int player = 1; //By default player 1 is set
-        static int choice; //This holds the choice at which position user want to mark 
-
-
-
-
         static void Main(string[] args)
         {
-            var initialSetup = "036147258";
+            int player = 1; //By default player 1 is set
+            int choice; //This holds the choice at which position user want to mark 
+            var initialSetup = "036147258"; // this number looks odd but ive created the tests before I ve created UI so to match the Test ive done tlie this
             string winner;
             GameBoard board = new GameBoard(initialSetup);
             do

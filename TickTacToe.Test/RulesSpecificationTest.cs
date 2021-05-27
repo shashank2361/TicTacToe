@@ -23,7 +23,7 @@ namespace TicTacToe
             // player 1 wins
 
 
-            Assert.True(game.GetWinner() == "X");
+            Assert.True(game.GetWinner() == GameStatus.X.ToString());
         }
         [Fact]
 
@@ -36,7 +36,7 @@ namespace TicTacToe
 
             game = new Game(initialBoardSetup);
             // player 1 wins
-            Assert.Equal("X", game.GetWinner());
+            Assert.Equal(GameStatus.X.ToString(), game.GetWinner());
 
         }
 

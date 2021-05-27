@@ -18,7 +18,7 @@ namespace TicTacToe.Test
             game.Play("O", 0, 1);
             game.Play("X", 1, 0);
             game.Play("O", 1, 1);
-            game.Play("X", 2, 1);
+            game.Play("X", 2, 0);
 
             // player 1 wins
             Assert.True(game.GetWinner() == GameStatus.X.ToString());

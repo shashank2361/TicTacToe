@@ -92,7 +92,7 @@ namespace TicTacToe.UI
            var noofFilledCells = 0;
             foreach (var item in this.board)
             {
-                if (item.Equals(GameStatus.X.ToString()) || item.Equals(GameStatus.O.ToString() ))
+                if ( item != null && (item.Equals(GameStatus.X.ToString()) || item.Equals(GameStatus.O.ToString() )))
                 {
                     noofFilledCells++;
 
